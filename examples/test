@@ -1,0 +1,262 @@
+doc_type: DOC_TYPE_APP
+doc_schema {
+  annotation_id: 10
+  annotation_name: "titleEn"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: true
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 11
+  annotation_name: "displayTitle"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: true
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 12
+  annotation_name: "packageName"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 13
+  annotation_name: "tagline"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 14
+  annotation_name: "tag"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: true
+  }
+}
+doc_schema {
+  annotation_id: 15
+  annotation_name: "categoryName"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 16
+  annotation_name: "categoryAlias"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 17
+  annotation_name: "description"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: true
+  }
+}
+doc_schema {
+  annotation_id: 18
+  annotation_name: "official"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 19
+  annotation_name: "providerName"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 20
+  annotation_name: "provider_id"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 21
+  annotation_name: "sign"
+  annotation_type: TEXT
+  text_schema {
+    restrict_search: true
+    free_text_search: true
+    full_match: false
+    repeatable: false
+  }
+}
+doc_schema {
+  annotation_id: 22
+  annotation_name: "versionCode"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 23
+  annotation_name: "description_level"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 24
+  annotation_name: "downloadCount"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 25
+  annotation_name: "weeklyDownloadCount"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 26
+  annotation_name: "providerWeight"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 27
+  annotation_name: "languageType"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 28
+  annotation_name: "verifiedByGooglePlay"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 29
+  annotation_name: "verified"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 30
+  annotation_name: "superior"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 31
+  annotation_name: "adsType"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 32
+  annotation_name: "privacy"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 33
+  annotation_name: "reputationScore"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 34
+  annotation_name: "status"
+  annotation_type: NUM
+  numerical_schema {
+    type: INTEGER
+  }
+}
+doc_schema {
+  annotation_id: 35
+  annotation_name: "bytes"
+  annotation_type: NUM
+  numerical_schema {
+    type: INT64
+  }
+}
+doc_schema {
+  annotation_id: 36
+  annotation_name: "lastUpdate"
+  annotation_type: NUM
+  numerical_schema {
+    type: UTC_TIME
+  }
+}
+doc_schema {
+  annotation_id: 37
+  annotation_name: "apkUpdatedTime"
+  annotation_type: NUM
+  numerical_schema {
+    type: UTC_TIME
+  }
+}
+ 

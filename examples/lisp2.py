@@ -1,0 +1,47 @@
+from string import *
+import re
+from yappsrt import *
+
+class LispScanner(Scanner):
+    patterns = [
+        ('r"\\)"', re.compile('\\)')),
+        ('r"\\("', re.compile('\\(')),
+        ('\\s+', re.compile('\\s+')),
+        ('NUM', re.compile('[0-9]+')),
+        ('STR', re.compile('([^\\\\"]+|\\\\.)*')),
+    ]
+    def __init__(self, str):
+        Scanner.__init__(self,None,['\\s+'],str)
+
+class Lisp(Parser):
+    def expr(self):
+        _token_ = self._peek('STR', 'NUM', 'r"\\("')
+        if _token_ == 'STR':
+            STR = self._scan('STR')
+            return ('str',STR)
+        elif _token_ == 'NUM':
+            NUM = self._scan('NUM')
+            return ('num',atoi(NUM))
+        else:# == 'r"\\("'
+            self._scan('r"\\("')
+            e = []
+            while self._peek() != 'r"\\)"':
+                expr = self.expr()
+                e.append(expr)
+            self._scan('r"\\)"')
+            return e
+
+
+def parse(rule, text):
+    P = Lisp(LispScanner(text))
+    return wrap_error_reporter(P, rule)
+
+if __name__ == '__main__':
+    from sys import argv, stdin
+    if len(argv) >= 2:
+        if len(argv) >= 3:
+            f = open(argv[2],'r')
+        else:
+            f = stdin
+        print parse(argv[1], f.read())
+    else: print 'Args:  <rule> [<filename>]'
